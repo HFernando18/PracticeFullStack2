@@ -9,7 +9,7 @@ const onDelete = async (id) => {
     }
 
     const response = await fetch(`http://127.0.0.1:5000/delete_contact/${id}`, options)
-    if(response.status==200){
+    if(response.status === 200){
       updateCallback()
     } else {
       console.error("Error al eliminar contacto")
