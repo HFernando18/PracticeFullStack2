@@ -17,7 +17,7 @@ const ContactForm = ({}) => {
         const options = {
             method: "POST",
             headers: {
-                "Content-Typ": "application/json"
+                "Content-Type": "application/json"
 
             }, 
             body: JSON.stringify(data)
@@ -25,7 +25,7 @@ const ContactForm = ({}) => {
         const response = await fetch(url, options)
         if (response.status !== 201 && response.status !== 200) {
             const data = await response.json()
-            alert(data.message)   
+            alert(data.message)
         } else {
             //successful
         }
@@ -37,9 +37,9 @@ const ContactForm = ({}) => {
 
         <div>
             <label htmlFor="firstName">First Name:</label>
-             <input  type="text" 
-             id= "firstName" 
-             value={firstName} 
+             <input  type="text"
+             id= "firstName"
+             value={firstName}
              onChange={(e) => setFirstName(e.target.value)}
              />
        
@@ -47,9 +47,9 @@ const ContactForm = ({}) => {
 
         <div>
             <label htmlFor="lastName">Last Name:</label>
-             <input  type="text" 
-             id= "lastName" 
-             value={lastName} 
+             <input  type="text"
+             id= "lastName"
+             value={lastName}
              onChange={(e) => setLastName(e.target.value)}
              />
        
@@ -57,9 +57,9 @@ const ContactForm = ({}) => {
 
         <div>
             <label htmlFor="email">Email:</label>
-             <input  type="text" 
-             id= "email" 
-             value={email} 
+             <input  type="text"
+             id= "email"
+             value={email}
              onChange={(e) => setEmail(e.target.value)}
              />
        
@@ -70,10 +70,8 @@ const ContactForm = ({}) => {
 
     </form>
 
-    );
+    )
 
-};
+}
 
 export default ContactForm
-
-
