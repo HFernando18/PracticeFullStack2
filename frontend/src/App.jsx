@@ -25,15 +25,15 @@ function App() {
   const openCreateModal = () => {
     if(!isModalOpen) setIsModalOpen (true)
   }
-const openEditModal = (contact) => {
-  if(isModalOpen) return
-  setCurrentContact(contact)
-  setIsModalOpen(true)
-}
-const onUpdate = () => {
-  closeModal()
-  fetchContacts()
-}
+  const openEditModal = (contact) => {
+    if(isModalOpen) return
+    setCurrentContact(contact)
+    setIsModalOpen(true)
+  }
+  const onUpdate = () => {
+    closeModal()
+    fetchContacts()
+  }
 
   return (
     <>

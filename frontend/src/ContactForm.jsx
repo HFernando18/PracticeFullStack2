@@ -38,7 +38,7 @@ const ContactForm = ({existingContact = {}, updateCallback}) => {
        
 
         <div>
-            <label htmlFor="firstName">First Name:</label>
+            <label htmlFor="firstName">Nombre:</label>
              <input  type="text"
              id= "firstName"
              value={firstName}
@@ -48,7 +48,7 @@ const ContactForm = ({existingContact = {}, updateCallback}) => {
         </div>
 
         <div>
-            <label htmlFor="lastName">Last Name:</label>
+            <label htmlFor="lastName">Apellido:</label>
              <input  type="text"
              id= "lastName"
              value={lastName}
