@@ -98,3 +98,25 @@ label {
 .close:hover {
   color: #d71818; /* Cambia el color al pasar el mouse */
 }
+
+table {
+  width: 100%; /* Ancho completo de la tabla */
+  border-collapse: collapse; /* Elimina el espacio entre bordes */
+  margin-top: 2rem; /* Espacio superior */
+}
+
+th, td {
+  padding: 1rem; /* Espaciado interno */
+  text-align: left; /* Alineación del texto */
+  border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
+}
+
+th {
+  background-color: #393838d2; /* Color de fondo para el encabezado */
+  font-weight: bold; /* Negrita para el encabezado */
+
+}
+
+tbody tr:hover {
+  background-color: #181818d2; /* Color de fondo al pasar el mouse */
+}
