@@ -21,7 +21,7 @@ const onDelete = async (id) => {
 
   return (
     <div>
-      <h2>Contacts</h2>
+      <h2>Lista de Contactos</h2>
       <table>
         <thead>
           <tr>
@@ -32,7 +32,8 @@ const onDelete = async (id) => {
           </tr>
         </thead>
         <tbody>
-          {contacts.map((contact) => (
+          {contacts.length > 0 ? (
+          contacts.map((contact) => (
             <tr key={contact.id}>
               <td>{contact.firstName}</td>
               <td>{contact.lastName}</td>
@@ -42,7 +43,12 @@ const onDelete = async (id) => {
                 <button onClick={() => onDelete(contact.id)}>Eliminar</button>
               </td>
             </tr>
-          ))}
+          ))
+        ) : (
+          <tr>
+              <td colSpan="4"><u>No hay contactos registrados</u></td>
+            </tr>
+        )}
         </tbody>
       </table>
     </div>
